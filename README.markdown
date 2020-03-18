@@ -3,6 +3,11 @@
 This is my personal fork of old [snipmate.vim](https://github.com/garbas/vim-snipmate) plugin with some custom snippets and keybindings.
 ⚠ Use at your own risk.
 
+#### Install
+```vim
+Plug 'notarun/snipmate.vim'  # using vim-plug
+```
+
 #### Keybindings
 ```
 <c-j>      => expand/forward
