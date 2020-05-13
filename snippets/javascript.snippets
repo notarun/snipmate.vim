@@ -24,8 +24,18 @@ snippet cf
 	};
 # Class
 snippet cl
-	class ${1:class_name }${2:extends }${3:parent_class }{
-	  ${4: // body}
+	class ${1:class_name } {
+	  ${2:// body}
+	}
+# Class with extend
+snippet cle
+	class ${1:class_name } extends ${2:parent_class }{
+	  ${3: // body}
+	}
+# Constructor
+snippet con
+	constructor(${1:args}) {
+	  ${2:// code}
 	}
 # Method
 snippet m
@@ -66,7 +76,12 @@ snippet for
 	}
 # for...of
 snippet foro
-	for (const ${1:thing} of ${2:things}) {
+	for (const ${1:element} of ${2:iteratable}) {
+	  ${3:// code}
+	}
+# for...in
+snippet fori
+	for (const ${1:property} in ${2:enumerable}) {
 	  ${3:// code}
 	}
 # while (...) {...}
