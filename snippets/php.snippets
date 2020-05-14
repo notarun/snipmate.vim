@@ -42,8 +42,12 @@ snippet m
 		${6:// do stuff}
 	}
 snippet if
-	if (${1:$something} ${2:===} ${3:'something'}) {
-		${4:// then do this}
+	if (${1:condition}) {
+		${2:// then do this}
+	}
+snippet else
+	else {
+		${1:// then do this}
 	}
 snippet fore
 	foreach ($${1:things} as ${2:key => }$${3:needle}) {
