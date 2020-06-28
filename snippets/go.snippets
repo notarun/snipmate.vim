@@ -1,0 +1,59 @@
+# package
+snippet p
+	package ${1:main}${2}
+# import
+snippet im
+	import (
+		"${1:fmt}"${2}
+	)${3}
+# main
+snippet main
+	func main() {
+		${1:/* code */}
+	}
+# function
+snippet func
+	func ${1:FuctionName}(${2:arguments}) ${3:ReturnType} {
+		${4:/* code */}
+	}${5}
+# closure
+snippet f
+	func(${1:arguments}) ${2:ReturnType} {
+		${3:/* code */}
+	}${4}
+# struct
+snippet st
+	type ${1:TypeName} struct {
+		${2:Item TypeName}
+	}${3}
+# variable
+snippet v
+	${1:variable} := ${2:value}
+# var
+snippet var
+	var (
+		${1:VariableName TypeName}
+	)${2}
+# if
+snippet if
+	if ${1:condition} {
+		${2:/* code */}
+	}${3}
+# else
+snippet else
+	else {
+		${1:/* code */}
+	}${2}
+# for
+snippet for
+	for ${1:condition} {
+		${2:/* code */}
+	}${3}
+# switch
+snippet switch
+	switch ${1:foo} {
+	case ${2:value}:
+		${3:/* code */}
+	default:
+		${4:/* code */}
+	}${5}
